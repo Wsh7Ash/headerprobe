@@ -1,8 +1,21 @@
-build
+# Python build and test artifacts
 __pycache__/
 *.pyc
+*.pyo
 .pytest_cache/
+build/
 dist/
 *.egg-info/
-results/*
-!results/.gitkeep
+.venv/
+venv/
+
+# secrets and local config (never commit)
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+credentials.json
+
+# note: results/ is intentionally tracked — demo output is part of the release
